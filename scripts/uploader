@@ -13,7 +13,11 @@ do
 	fi
 
 	git add -A
-	git commit -m 'bot: bihourly world upload, iteration $upload_count' --signoff
+	git commit -m \
+		'bot: bihourly world upload, iteration ${upload_count} \
+								       \
+		 Co-authored-by: nhansp <nhan.094.vn@gmail.com>'       \
+	 --signoff
 	git branch -M gay
 	git remote add origin https://github.com/nhansp/minecraft_server.git
 	git push -uf origin gay
