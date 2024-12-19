@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+WORLD="${PWD}/.."
+upload_count=0
+cd $WORLD
+
+while true
+do
+	upload_count += 1
+	if [[ $upload_count == 5 ]]; then
+		rm -rf "$WORLD/.git"
+		git init
+	fi
+
+	git add -A
+	git commit -m 'bot: bihourly world upload, iteration $upload_count' --signoff
+	git branch -M gay
+	git remote add origin https://github.com/nhansp/minecraft_server.git
+	git push -uf origin gay
+
+	sleep 7200
+done
+

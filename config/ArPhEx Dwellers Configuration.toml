@@ -1,0 +1,15 @@
+
+[Spawning]
+	#This controls whether all dweller versions will require specific weather conditions to spawn. Without this, they will appear very frequently.
+	"Dweller_requires_thunder?" = true
+	#Do you want the dwellers and clone versions to spawn naturally?
+	"Dweller Spawning" = true
+	#This controls whether the dweller bosses (spider moth, scorpioid bloodluster, transcendental tormentor) are included in general. Set to false if you only want the other mobs, and the dwellers will become unable to be spawned in any way.
+	"Dweller Inclusion" = true
+	#Dwellers and variant spawns are rare by default. 1=twice as common. 2=default rarity. 3=twice as rare. 4=three times rarer.
+	"Dweller Rarity" = 2.0
+
+[Difficulty]
+	#By default, the three dweller bosses have hundreds of health points. Choose true to decrease their maximum to just 60 health.
+	"Dweller Health" = false
+
